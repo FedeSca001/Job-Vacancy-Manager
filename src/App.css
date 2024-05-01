@@ -1,0 +1,27 @@
+#root {
+  width: 100%;
+  padding: 2rem;
+
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+  background-color: #bbb8b8;
+  width: 80%;
+  height: 250px;
+  margin: 10px auto;
+  padding: 0.5em;
+  font-size: 1em;
+  gap: 1em;
+}
+
+.left-content {
+  padding-right: 1em;
+
+}
+
+.right-content {
+  background-color: rgb(255, 255, 255);
+  padding-left: 1em;
+}
