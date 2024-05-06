@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import AddCard from './Componentes/AddCard';
 
 function App() {
-  const [status, setStatus] = useState(['INTERESTED', 'APPLIED', 'RECRUITER INTERVIEW', 'TECH INTERVIEW', 'CLIENT INTERVIEW', 'HR INTERVIEW', 'OFFER', 'NOT SELECTED'])
+  const status =['INTERESTED', 'APPLIED', 'RECRUITER INTERVIEW', 'TECH INTERVIEW', 'CLIENT INTERVIEW', 'HR INTERVIEW', 'OFFER', 'NOT SELECTED']
   return (
     <>
       <h1>Tech jobs tracker</h1>
