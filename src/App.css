@@ -1,27 +1,45 @@
 #root {
   width: 100%;
   padding: 2rem;
+}
 
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  background-color: #e0f7fa;
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: 20% auto;
-  background-color: #bbb8b8;
-  width: 80%;
-
-  margin: 10px auto;
-  padding: 0.5em;
-  font-size: 1em;
-  gap: 1em;
+  background-color: #ffeb3b;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .left-content {
-  padding-right: 1em;
-
+  padding-bottom: 1em;
 }
 
 .right-content {
-  background-color: rgb(255, 255, 255);
-  padding-left: 1em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .sections-container {
+    grid-template-columns: 1fr;
+  }
 }
